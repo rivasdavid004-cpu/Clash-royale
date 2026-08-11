@@ -7,16 +7,12 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+ font-family: sans-serif;
   background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50vw;
-  min-height: calc(100vh - 100px)
+  width: calc(100vw - 2cm);
+  min-height: calc(100vh - 100px);
+  margin: 40px auto;
+  padding: 40px 60px;
 }
 
 header {
