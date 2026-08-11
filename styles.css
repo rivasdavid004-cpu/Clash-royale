@@ -7,43 +7,70 @@ html {
 }
 
 body {
- font-family: sans-serif;
+  font-family: sans-serif;
   background-color: #ffffff;
+  /* Deja aproximadamente 1 cm a cada lado */
   width: calc(100vw - 2cm);
-  min-height: calc(100vh - 100px);
-  margin: 40px auto;
-  padding: 40px 60px;
+  max-width: 900px; /* Evita que en pantallas de PC gigantes se estire demasiado */
+  min-height: calc(100vh - 80px);
+  margin: 30px auto;
+  padding: 30px 40px;
 }
 
-header {
-  text-align: center;
-}
-
+header,
 footer {
   text-align: center;
 }
 
 img {
-  width: 300px;
-  max-width: 100%; 
+  width: 100%;
+  max-width: 320px;
+  height: auto;
   display: block;
-  margin: 0 auto 20px; 
+  margin: 0 auto 20px;
 }
 
 hr {
-  width: 80%;
-  margin: 20px auto;
+  width: 85%;
+  margin: 25px auto;
   border: 1px solid #000;
 }
 
 main {
   display: flex;
   justify-content: space-between;
-  gap: 40%;
+  gap: 25px; /* Corregido: 40% rompía todo el espacio disponible */
   width: 100%;
 }
 
 section {
-  width: 48%;
-  flex: 1;
+  flex: 1; /* Distribuye el 50% exacto para cada sección */
+  min-width: 0;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    width: calc(100vw - 1.5cm); 
+    margin: 15px auto;
+    padding: 20px 15px;         
+  }
+
+  main {
+    gap: 15px;                  
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  ul {
+    font-size: 0.85rem;
+    padding-left: 15px;
+  }
 }
