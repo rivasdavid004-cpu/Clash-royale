@@ -5,8 +5,8 @@ html {
 body {
   font-family: sans-serif;
   background-color: #ffffff;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
@@ -39,7 +39,8 @@ hr {
 main {
   display: flex;
   justify-content: space-between;
-  gap: 20%;
+  gap: 40%;
+  width: 100%;
 }
 
 section {
